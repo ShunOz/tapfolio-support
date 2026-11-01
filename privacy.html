@@ -19,33 +19,34 @@
 <body>
 <main>
   <h1>Tapfolio プライバシーポリシー</h1>
-  <p class="muted">最終更新日：2026年11月1日</p>
+  <p class="muted">最終更新日：2026年11月2日</p>
 
-  <p>Tapfolio（以下「本アプリ」）は、自分のSNSやサイト、Wi-FiなどのQRコードをまとめて保存し、すぐに見せたりURLをコピーしたりするためのアプリです。基本の登録情報は端末内に保存します。任意の写真付き名刺QRでは、共有する名刺を暗号化し、受け渡しのためCloudflare上へ一時保存します。</p>
+  <p>Tapfolio（以下「本アプリ」）は、自分のSNSやサイト、Wi-FiなどのQRコードをまとめて保存し、すぐに見せたりURLをコピーしたりするためのアプリです。基本の登録情報は端末内に保存します。任意の写真付き名刺・プロフィールQRでは、共有するカードを暗号化し、受け渡しのためCloudflare上へ一時保存します。</p>
 
   <h2>1. 保存する情報</h2>
   <ul>
     <li>登録したSNSのユーザー名、URL、サイト、Wi-Fiのネットワーク名とパスワード、QRコードの内容</li>
     <li>アイコンや背景に選んだ画像、テーマ、並び順などの設定</li>
     <li>自分のビジネスポートフォリオと受け取った名刺（写真、氏名、肩書き、任意の生年月日、学歴・経歴、選択したリンク）</li>
+    <li>自分と受け取った相手のプロフィール帳（写真、名前、任意の生年月日・血液型・MBTI・出身地・職業・趣味・特技、選択したリンク）。ビジネス用の名刺とは分けて保存します。</li>
   </ul>
-  <p>登録情報や設定は、原則としてiPhone内の本アプリとウィジェットの共有領域に保存され、Wi-FiのパスワードはiOSのKeychainに保存されます。オンライン名刺交換を選んだ場合の一時保存は、次の「写真付き名刺QR」の通りです。利用者が選択して表示・コピー・共有した情報は、共有先に渡ります。端末のバックアップにはアプリのデータが含まれる場合があります。アプリの削除で通常の保存データは削除されますが、Keychain内の情報や端末・外部に保存したバックアップが同時に削除されるとは限りません。</p>
+  <p>登録情報や設定は、原則としてiPhone内の本アプリとウィジェットの共有領域に保存され、Wi-FiのパスワードはiOSのKeychainに保存されます。オンライン名刺交換を選んだ場合の一時保存は、次の「写真付き名刺・プロフィールQR」の通りです。利用者が選択して表示・コピー・共有した情報は、共有先に渡ります。端末のバックアップにはアプリのデータが含まれる場合があります。アプリの削除で通常の保存データは削除されますが、Keychain内の情報や端末・外部に保存したバックアップが同時に削除されるとは限りません。</p>
 
   <h2>2. 通信について</h2>
   <ul>
     <li><strong>アイコンとサイト名の自動取得：</strong>登録したURLのページを、iPhoneから直接読み込みます（メッセージアプリのリンクプレビューと同じ仕組みです）。このとき、そのSNSやサイトに通常のアクセスと同じ情報が届きます。</li>
     <li><strong>外部サービスでアイコンを探す：</strong>利用者が確認画面で同意したときだけ、ユーザー名を外部サービス unavatar.io に送ってアイコンを探します。同サービスは画像のキャッシュ、リクエスト情報、利用回数等を保存し、応答の提供、不正利用防止、サービスの運用・性能の把握等に使用する場合があります。詳しくは<a href="https://web.unavatar.io/privacy">unavatarのプライバシーポリシー</a>をご確認ください。</li>
   </ul>
-  <h3>写真付き名刺QR（任意）</h3>
-  <p>利用者が共有を確認すると、写真と共有対象のプロフィールをiPhone上の標準暗号化機能（AES-GCM）で暗号化し、Cloudflare Workers・D1へ送信します。非共有に設定した生年月日、Wi-Fi情報、内部のカード選択IDや整理グループは含めません。復号に必要な鍵はQRに含め、サーバーには送信しません。</p>
-  <p>QRは作成から10分間有効で、QRを知っている人は名刺を受け取れます。自分の名刺を返送するときは別途確認操作が必要です。相手の端末に保存された名刺は期限後も残り、送信者からの自動更新・削除はされません。受取人はアプリ内で保存した名刺を削除できます。</p>
+  <h3>写真付き名刺・プロフィールQR（任意）</h3>
+  <p>利用者が共有を確認すると、名刺・プロフィール帳の写真と共有対象の入力項目をiPhone上の標準暗号化機能（AES-GCM）で暗号化し、Cloudflare Workers・D1へ送信します。非共有に設定した生年月日、Wi-Fi情報、内部のカード選択IDや整理グループは含めません。復号に必要な鍵はQRに含め、サーバーには送信しません。</p>
+  <p>QRは作成から10分間有効で、QRを知っている人は名刺を受け取れます。自分の名刺を返送するときは別途確認操作が必要です。相手の端末に保存された名刺は期限後も残り、送信者からの自動更新・削除はされません。受取人はアプリ内で保存した名刺やプロフィールを削除できます。プロフィール帳では入力した任意項目も相手へ渡り、生年月日は共有をオンにした場合だけ含まれます。共有前に確認画面で内容を確認できます。</p>
   <p>期限後はAPIから取得できなくなり、暗号化データは次回の整理処理（通常15分ごと、処理遅延の場合あり）で削除します。Cloudflareの復元用履歴には削除前の暗号化データが最大7日間残る場合があります。通信の際にはIPアドレス等の接続情報がCloudflareへ届き、不正利用防止・障害対応に利用されます。写真・氏名の本文や復号鍵をアプリのサーバーログには出力しません。詳しくは<a href="https://www.cloudflare.com/privacypolicy/">Cloudflareのプライバシーポリシー</a>をご確認ください。</p>
 
   <p>Tapfolio Plusの商品の取得、購入、購入の復元や購入状態の確認にはAppleのApp Storeと通信します。支払いはAppleが処理し、本アプリはカード番号などの決済情報を取得しません。開発者が利用者の登録情報を集める広告・アクセス解析・トラッキングの仕組みは組み込んでいません。</p>
 
   <h2>3. 写真とFace ID</h2>
   <ul>
-    <li>写真は、利用者が選んだ画像だけを読み込み、アイコン・背景・名刺写真・QRの読み取りに使います。</li>
+    <li>写真は、利用者が選んだ画像だけを読み込み、アイコン・背景・名刺やプロフィールの写真・QRの読み取りに使います。</li>
     <li>Face ID（またはパスコード）は、非表示にしたアカウントを表示するときの本人確認に使います。認証はiPhoneが行い、顔の情報を本アプリが受け取ることはありません。</li>
   </ul>
 
@@ -64,12 +65,12 @@
   <hr>
 
   <h1>Tapfolio Privacy Policy</h1>
-  <p class="muted">Last updated: November 1, 2026</p>
+  <p class="muted">Last updated: November 2, 2026</p>
   <p>Tapfolio stores your own SNS profiles, websites, Wi-Fi details and QR codes so you can show or copy them quickly. Core data stays on your device. Optional photo-card QR exchange temporarily relays an encrypted card through Cloudflare; third-party lookups and Apple purchase processing are described below.</p>
   <ul>
-    <li><strong>Device storage.</strong> Registered profiles, URLs, QR contents, images and settings are stored locally in the shared app/widget container. Wi-Fi passwords are stored in the iOS Keychain. Information you choose to show, copy or share is disclosed to the selected recipient. Device backups may include app data. Removing the app does not necessarily remove Keychain items or copies in backups.</li>
+    <li><strong>Device storage.</strong> Business cards and personal profile books are stored separately. Personal profile fields include a photo, name and optional birthday, blood type, MBTI, hometown, occupation, hobbies, skills and selected links. Registered SNS profiles, URLs, QR contents, images and settings are stored locally in the shared app/widget container. Wi-Fi passwords are stored in the iOS Keychain. Information you choose to show, copy or share is disclosed to the selected recipient. Device backups may include app data. Removing the app does not necessarily remove Keychain items or copies in backups.</li>
     <li><strong>Network.</strong> When fetching an icon or site name, the app loads the URL you registered directly from your iPhone, like a link preview. Only if you confirm, it sends a username to the third-party service unavatar.io to find an icon. That service may retain cached images, request metadata and usage counters for service delivery, abuse prevention, operation and understanding performance; see its <a href="https://web.unavatar.io/privacy">privacy policy</a>. Apple processes product retrieval, purchases, restores and entitlement verification through the App Store; the app does not receive payment card details. No advertising, developer analytics or tracking SDK is included.</li>
-    <li><strong>Optional photo-card QR exchange.</strong> After confirmation, the app encrypts the selected public business card, including its photo, using iOS AES-GCM and temporarily stores the ciphertext on Cloudflare Workers and D1. The decryption key is carried in the QR and is not sent to the server. Non-shared birthdays, Wi-Fi data and local organization identifiers are excluded. Anyone with the QR can receive the card for 10 minutes. Returning your card requires a separate confirmation. Saved recipient copies remain after expiry and do not automatically update or disappear. Expired data cannot be retrieved via the API and is removed by cleanup, normally every 15 minutes, subject to delays. Encrypted historical copies may remain in Cloudflare recovery history for up to 7 days. Cloudflare receives connection metadata such as IP addresses for service delivery, abuse prevention and troubleshooting. Card contents and decryption keys are not written to application server logs. See <a href="https://www.cloudflare.com/privacypolicy/">Cloudflare's privacy policy</a>.</li>
+    <li><strong>Optional photo-card QR exchange.</strong> After confirmation, the app encrypts the selected public business card or personal profile, including its photo and filled-in shared fields, using iOS AES-GCM and temporarily stores the ciphertext on Cloudflare Workers and D1. The decryption key is carried in the QR and is not sent to the server. Only birthdays explicitly enabled for sharing are included. Other filled-in personal fields are shared with the recipient. Non-shared birthdays, Wi-Fi data and local organization identifiers are excluded. Anyone with the QR can receive the card for 10 minutes. Returning your card requires a separate confirmation. Saved recipient copies remain after expiry and do not automatically update or disappear. Expired data cannot be retrieved via the API and is removed by cleanup, normally every 15 minutes, subject to delays. Encrypted historical copies may remain in Cloudflare recovery history for up to 7 days. Cloudflare receives connection metadata such as IP addresses for service delivery, abuse prevention and troubleshooting. Card contents and decryption keys are not written to application server logs. See <a href="https://www.cloudflare.com/privacypolicy/">Cloudflare's privacy policy</a>.</li>
     <li><strong>Backups.</strong> You can export your data to a file and select where to save or share it. The file includes Wi-Fi passwords. Third-party storage providers apply their own terms and privacy policies. Delete unwanted copies at their storage location.</li>
     <li><strong>Photos and Face ID.</strong> Only images you pick are read. Face ID is handled by iOS to reveal hidden accounts; the app never receives face data.</li>
   </ul>
