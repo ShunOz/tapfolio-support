@@ -23,6 +23,8 @@
 
   <p>Tapfolio（以下「本アプリ」）は、自分のSNSやサイト、Wi-FiなどのQRコードをまとめて保存し、すぐに見せたりURLをコピーしたりするためのアプリです。基本の登録情報は端末内に保存します。任意の写真付き名刺・プロフィールQRでは、共有するカードを暗号化し、受け渡しのためCloudflare上へ一時保存します。</p>
 
+  <p>共有QRのリンクは、アプリがない人もブラウザで10分間閲覧できます。復号は閲覧者のブラウザ内で行い、鍵はURLのフラグメント（#以降）に保持され、サーバーへ送信しません。Webページに広告・解析ツールは含めず、カードをブラウザの永続ストレージへ保存しません。アプリへ保存するには受信者が明示的に操作する必要があり、自動同期は行いません。交換日・場所・自分用メモは共有しません。</p>
+
   <h2>1. 保存する情報</h2>
   <ul>
     <li>登録したSNSのユーザー名、URL、サイト、Wi-Fiのネットワーク名とパスワード、QRコードの内容</li>
@@ -66,6 +68,7 @@
 
   <h1>Tapfolio Privacy Policy</h1>
   <p class="muted">Last updated: November 2, 2026</p>
+  <p>Shared QR links can also be viewed in a browser for 10 minutes without installing the app. The browser decrypts the card locally using a key kept only in the URL fragment (#), which is not sent to the server. The Web card uses no advertising or analytics and does not persist cards in browser storage. Saving to Tapfolio requires an explicit recipient action; there is no automatic sync. Exchange dates, places and private contact notes are never included.</p>
   <p>Tapfolio stores your own SNS profiles, websites, Wi-Fi details and QR codes so you can show or copy them quickly. Core data stays on your device. Optional photo-card QR exchange temporarily relays an encrypted card through Cloudflare; third-party lookups and Apple purchase processing are described below.</p>
   <ul>
     <li><strong>Device storage.</strong> Business cards and personal profile books are stored separately. Personal profile fields include a photo, name and optional birthday, blood type, MBTI, hometown, occupation, hobbies, skills and selected links. Registered SNS profiles, URLs, QR contents, images and settings are stored locally in the shared app/widget container. Wi-Fi passwords are stored in the iOS Keychain. Information you choose to show, copy or share is disclosed to the selected recipient. Device backups may include app data. Removing the app does not necessarily remove Keychain items or copies in backups.</li>
