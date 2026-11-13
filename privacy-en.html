@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tapfolio Privacy Policy</title>
+<style>
+  :root { --bg: #F6F3EE; --text: #1C1C1E; --muted: #6b6b70; --accent: #FF7896; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #1C1C1E; --text: #F2F2F7; --muted: #a1a1a8; } }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.75 -apple-system, sans-serif; }
+  main { max-width: 680px; margin: 0 auto; padding: 40px 16px 64px; }
+  h1 { font-size: 26px; margin: 0 0 4px; }
+  h2 { font-size: 18px; margin: 32px 0 8px; border-left: 4px solid var(--accent); padding-left: 10px; }
+  p, li { margin: 6px 0; }
+  .muted { color: var(--muted); font-size: 14px; }
+  a { color: inherit; }
+</style>
+</head>
+<body><main>
+<h1>Tapfolio Privacy Policy</h1>
+<p class="muted">Last updated: November 2, 2026</p>
+<p>Tapfolio (the “app”) lets you keep QR codes for your social accounts, websites, Wi-Fi and other items together, so you can quickly show them or copy their URLs. Your basic information is stored on your device. If you choose to share a business card or profile with a photo by QR code, the app encrypts the card and temporarily stores it on Cloudflare for delivery.</p>
+<p>Anyone with the sharing link can view it in a browser for 10 minutes without the app. The card is decrypted in the viewer’s browser. The decryption key stays in the URL fragment (the part after #) and is not sent to the server. The web page contains no advertising or analytics tools and does not save the card in persistent browser storage. The recipient must explicitly choose to save a card in the app; there is no automatic synchronization. Exchange dates, places and private notes are not shared.</p>
+<h2>1. Information stored</h2>
+<ul>
+<li>Social account usernames and URLs, websites, Wi-Fi network names and passwords, and QR code contents you register</li>
+<li>Images selected for icons and backgrounds, themes, order and other settings</li>
+<li>Your business portfolios and received business cards, including photos, names, job titles, optional dates of birth, education, career history and selected links</li>
+<li>Your own and received personal profiles, including photos, names, optional dates of birth, blood type, MBTI, hometown, occupation, hobbies, skills and selected links. These are stored separately from business cards.</li>
+</ul>
+<p>Registered information and settings are generally stored in the shared container used by the app and its widgets on your iPhone. Wi-Fi passwords are stored in the iOS Keychain. Temporary storage for online exchange is described below. Information you choose to show, copy or share is disclosed to the recipient. Device backups may contain app data. Deleting the app normally removes its stored data, but Keychain items and copies in device or external backups may remain.</p>
+<h2>2. Network communication</h2>
+<ul>
+<li><strong>Automatically retrieving icons and website names:</strong> Your iPhone loads the registered URL directly, much like a messaging app’s link preview. The social network or website receives the usual information associated with a visit.</li>
+<li><strong>Finding icons with an external service:</strong> Only after you confirm, the app sends a username to unavatar.io to find an icon. That service may retain cached images, request information and usage counts to provide and operate its service, prevent abuse and understand performance. See the <a href="https://web.unavatar.io/privacy">unavatar privacy policy</a>.</li>
+</ul>
+<h3>Optional photo-enabled business card and profile QR sharing</h3>
+<p>When you confirm sharing, the app uses the iPhone’s standard AES-GCM encryption to encrypt the photo and selected shared fields on your device, then sends the encrypted data to Cloudflare Workers and D1. Birthdays that are not enabled for sharing, Wi-Fi details, internal card selection IDs and organizational groups are excluded. The decryption key is included in the QR code and is not sent to the server.</p>
+<p>The QR code is valid for 10 minutes after creation, and anyone who has it can receive the card. Returning your own card requires separate confirmation. A card saved on a recipient’s device remains after the QR expires and is not automatically updated or deleted by the sender. Recipients can delete saved business cards and profiles in the app. Optional profile fields you enter are shared with the recipient; a birthday is included only if you enable it for sharing. You can review the contents on the confirmation screen before sharing.</p>
+<p>After expiry, the data can no longer be retrieved through the API. Encrypted data is deleted during the next cleanup, normally every 15 minutes, though delays can occur. Encrypted data from before deletion may remain in Cloudflare recovery history for up to seven days. Cloudflare receives connection information such as IP addresses for abuse prevention and troubleshooting. Card contents, including photos and names, and decryption keys are not written to app server logs. See the <a href="https://www.cloudflare.com/privacypolicy/">Cloudflare privacy policy</a>.</p>
+<p>The app communicates with Apple’s App Store to retrieve Tapfolio Plus product information, make and restore purchases, and check purchase status. Apple processes payments; the app does not receive payment card details. The app does not include advertising, analytics or tracking tools that collect registered information for the developer.</p>
+<h2>3. Photos and Face ID</h2>
+<ul>
+<li>The app reads only images you select, for icons, backgrounds, business card and profile photos, or QR code scanning.</li>
+<li>Face ID or your passcode is used to authenticate you when revealing hidden accounts. Your iPhone performs authentication; the app does not receive your facial information.</li>
+</ul>
+<h2>4. Backups</h2>
+<p>You can export registered data to a file and choose where to save or share it. The file includes Wi-Fi passwords. The terms and privacy policies of any cloud storage or other destination apply. Delete unwanted backup copies at their storage locations.</p>
+<h2>5. Children</h2>
+<p>The developer does not provide a mechanism intended to collect children’s personal information. For communications involving external services, see “Network communication” above.</p>
+<h2>6. Changes</h2>
+<p>Changes to this policy will be announced on this page.</p>
+<h2>7. Contact</h2>
+<p><a href="mailto:shunoz.contact@gmail.com">shunoz.contact@gmail.com</a></p>
+<p><a href="privacy.html">日本語のプライバシーポリシー</a></p>
+</main></body></html>
